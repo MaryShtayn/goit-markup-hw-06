@@ -812,15 +812,11 @@ section.hero {
   letter-spacing: 0.03em;
   color: var(--main-clr);
 }
-.register-form-group {
-}
+
 .register-field {
   position: relative;
   width: 100%;
 }
-.register-form-lable {
-}
-
 .register-form-text::before {
   content: '';
   position: absolute;
