@@ -564,6 +564,12 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form__subscribe">
+          <strong class="subscribe-title">Підпишіться на розсилку</strong>
+          <div class="subscribe-form-group"><label class="subscribe-lable"><input class="subscribe-input" type="email" name="email" placeholder="E-mail" required></label>
+          <button class="subscribe-btn" type="submit">Підписатися<svg class="subscribe-icon" width="24" height="24"><use href="./images/icons.svg#send"></use></svg></button>
+       </div>
+       </div>
       </div>
     </footer>
 
@@ -576,47 +582,50 @@
           </svg>
         </button>
 
-          <form class="register__form" name="register-form" autocomplete="off" novalidate>
+          <form class="register-form" name="register-form" autocomplete="off" novalidate>
           <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
           <div class="register-form-group" role="group">
            <div class="register-field">
-            <label class="register-form-lable">
-             <span class="register-form-text">Ім'я</span><input
+            <label for="user-name" class="register-form-lable">
+             <span class="register-form-text">Ім'я</span>
+            </label><input
             type="text"
+            id="user-name"
             name="name"
             class="register-form-input"
             placeholder=" "
             required
-          />
-            </label>
+            />
               <svg class="register-form-icon" width="18" height="18">
                <use href="./images/icons.svg#person"></use>
               </svg>
           </div>
           <div class="register-field">
-            <label class="register-form-lable"><span class="register-form-text">Телефон</span><input
+            <label for="tel"class="register-form-lable"><span class="register-form-text">Телефон</span></label
+          ><input
             type="tel"
+            id="tel"
             name="telephone"
             class="register-form-input"
-            required
             maxlength="13"
             minlength="13"
             placeholder=" "
-          /></label
-          >
+            required
+          />
           <svg class="register-form-icon" width="18" height="18">
             <use href="./images/icons.svg#phone"></use>
           </svg>
           </div>
           <div class="register-field">
-            <label class="register-form-lable"><span class="register-form-text">Пошта</span><input
+            <label for="email" class="register-form-lable"><span class="register-form-text">Пошта</span></label
+          ><input
             type="email"
+            id="email"
             name="email"
             class="register-form-input"
             placeholder=" "
             required
-          /></label
-          >
+          />
           <svg class="register-form-icon" width="18" height="18">
             <use href="./images/icons.svg#email"></use>
           </svg>
@@ -627,15 +636,15 @@
           </label>
           <textarea class="register-form-textarea" placeholder="Введіть текст" name="comment" rows="5"></textarea>         </textarea>
                                
-          <label class="checkbox__agreement">
-          <svg class="checkbox-icon" width="18" height="18">
+          <label class="checkbox-lable">
+          
+          <input class="checkbox-input visually-hidden" type="checkbox" name="checkbox" required /><svg class="checkbox-icon" width="16" height="15">
             <use href="./images/icons.svg#v"></use>
-          </svg>
-          <input type="checkbox" name="checkbox" /><span class="checkbox-input"> Погоджуюся з розсилкою та приймаю         
+          </svg><span class="checkbox-text"> Погоджуюся з розсилкою та приймаю         
             <a href="#" class="checkbox-link" rel="noopener noreferrer"> Умови договору</a>
           </label>
         
-          <button class="register__form-btn" type="submit">Відправити</button>
+          <button class="register-form-btn" type="submit">Відправити</button>
           </form>
       </div>
     </div>
